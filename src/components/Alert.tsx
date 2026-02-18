@@ -9,13 +9,13 @@ interface AlertProps {
     | "info"
     | "light"
     | "dark";
-    onClickClose: () => void;
+    onClickClose: () => void
 }
 
 const Alert = (props: AlertProps) => {
   return (
     <div
-      className={`alert alert-${props.alertLevel} alert-dismissible fade show`}
+      className={`alert alert-${props.alertLevel} alert-dismissible fade show width-100 align-items-center d-flex justify-content-between`}
       role="alert"
     >
       {props.message}
